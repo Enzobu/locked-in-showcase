@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  lockedin:
+    container_name: lockedin_app
+    build: .
+    ports:
+      - "58172:3000"
+    restart: unless-stopped
